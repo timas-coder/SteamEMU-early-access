@@ -8,6 +8,7 @@ to install it, first open
 Turn Windows features on or off
 then select Windows subsystem for linux
 then restart
+then open ps or cmd and type this command
 ```
 wsl --install
 ```

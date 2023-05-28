@@ -14,13 +14,13 @@ def download_file():
     urllib.request.urlretrieve(url, file_name, reporthook=download_progress)
 
 def run_command1():
-    subprocess.run(['qemu-img create -f qcow2 steamos.qcow2 64G'])
+    subprocess.run(['wsl sudo qemu-img create -f qcow2 steamos.qcow2 64G'])
 
 def run_command2():
-    subprocess.run(['qemu-img create -f qcow2 steamos.qcow2 256G'])
+    subprocess.run(['wsl sudo qemu-img create -f qcow2 steamos.qcow2 256G'])
 
 def run_command3():
-    subprocess.run(['sudo wsl qemu-system-x86_64 -enable-kvm -smp cores=4 -m 8G \
+    subprocess.run(['wsl sudo qemu-system-x86_64 -enable-kvm -smp cores=4 -m 8G \
     -device usb-ehci -device usb-tablet \
     -device intel-hda -device hda-duplex \
     -device VGA,xres=1280,yres=800 \
@@ -30,7 +30,7 @@ def run_command3():
     -drive if=none,id=drive0,file=steamos.qcow2'])
 
 def run_command4():
-    subprocess.run(['echo', 'Another command!'])
+    subprocess.run(['echo', 'same as the linux version, this isnt finshed, and i dont have the time right now, why do you think it was beta... Because i liked the word beta? NoOoOoOoO'])
 
 root = tk.Tk()
 

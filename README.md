@@ -16,9 +16,9 @@ wsl --install
 ```
 Linux:
 
-First, install qemu using
+First, install python and qemu using
 ```
-sudo apt install qemu
+sudo apt install qemu python3
 ```
 then clone the repo using
 ```

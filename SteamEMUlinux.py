@@ -20,7 +20,7 @@ def run_command2():
     subprocess.run(['qemu-img create -f qcow2 steamos.qcow2 256G'])
 
 def run_command3():
-    subprocess.run(['sudo wsl qemu-system-x86_64 -enable-kvm -smp cores=4 -m 8G \
+    subprocess.run(['sudo qemu-system-x86_64 -enable-kvm -smp cores=4 -m 8G \
     -device usb-ehci -device usb-tablet \
     -device intel-hda -device hda-duplex \
     -device VGA,xres=1280,yres=800 \

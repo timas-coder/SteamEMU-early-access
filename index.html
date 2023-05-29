@@ -31,13 +31,27 @@
       height: auto;
       margin-bottom: 20px;
     }
+
+    .setup-button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .setup-button:hover {
+      background-color: #45a049;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>SteamEMU</h1>
+    <button class="setup-button" onclick="openSetup()">Setup</button>
   </header>
-  <img src="https://assets-prd.ignimgs.com/2021/07/15/steam-deck-button-1626368482359.jpg?width=300" alt="A picture of a steamdeck">
+  <img src="path/to/your/image.jpg" alt="SteamEMU Project Image">
   <main>
     <h2>About SteamEMU</h2>
     <p>
@@ -58,5 +72,13 @@
       SteamEMU is an open-source project, and I work on it by myself. I welcome contributions from the community. If you're interested in contributing, please visit the GitHub repository <a href="https://github.com/timas-coder/SteamEMU-early-access/">https://github.com/timas-coder/SteamEMU-early-access/</a>.
     </p>
   </main>
+
+  <script>
+    function openSetup() {
+      // Add your logic to handle the "Setup" button click event
+      // For example, you can redirect to a separate page or display a modal with setup instructions
+      alert("Open the Setup area"); // Replace this with your actual implementation
+    }
+  </script>
 </body>
 </html>

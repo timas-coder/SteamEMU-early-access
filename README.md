@@ -14,6 +14,11 @@ then open ps or cmd and type this command
 ```
 wsl --install
 ```
+then open wsl by typing ubuntu into the cmd
+then run
+```
+sudo apt install qemu
+```
 Linux:
 
 First, install python and qemu using
